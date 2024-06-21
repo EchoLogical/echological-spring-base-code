@@ -1,0 +1,31 @@
+springdoc:
+  title: Msg urlshortener app
+  version: 1.0
+  desc: Msg urlshortener app
+spring:
+  application:
+    name: Msg urlshortener app
+server:
+  port: 9000
+db:
+  urlshortener:
+    hikari:
+      url: jdbc:sqlserver://SVRDW16DTM01:1433;databaseName=AVRBIZ
+      username: sa
+      password: P@ssw0rd
+      max-pool-size: 10
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+      show-sql: true
+      format-sql: true
+service:
+  urlshortener:
+    generateshorturl:
+      defaultloop: 300
+      redirect:
+        scheme: https
+        host: adev.avrist.com/st
+logging:
+  config: classpath:logback-uat.xml
