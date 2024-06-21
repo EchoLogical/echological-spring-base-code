@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan({
-		"com.avrist.msgconv"
+		"com.avrist.urlshortener"
 })
 public class UrlshortenerEndpointApplication extends SpringBootServletInitializer {
 
