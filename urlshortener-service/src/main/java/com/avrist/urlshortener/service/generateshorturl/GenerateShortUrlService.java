@@ -1,9 +1,10 @@
 package com.avrist.urlshortener.service.generateshorturl;
 
+import com.avrist.urlshortener.datasource.db1.entity.UrlShortenerEntity;
+import com.avrist.urlshortener.datasource.db1.repository.TappRepository;
+import com.avrist.urlshortener.datasource.db1.repository.UrlShortenerRepository;
 import com.avrist.urlshortener.global.constant.AVRHttpStatus;
 import com.avrist.urlshortener.global.exception.AVRBusinessValidationException;
-import com.avrist.urlshortener.datasource.db1.entity.UrlShortenerEntity;
-import com.avrist.urlshortener.datasource.db1.repository.UrlShortenerRepository;
 import com.avrist.urlshortener.service.UrlShortenerService;
 import com.avrist.urlshortener.service.generateshorturl.config.GenerateShortUrlConfig;
 import com.avrist.urlshortener.service.generateshorturl.model.request.GenerateShortUrlRequest;
@@ -25,9 +26,27 @@ public class GenerateShortUrlService implements
 
     private final GenerateShortUrlConfig generateShortUrlConfig;
     private final UrlShortenerRepository urlShortenerRepository;
+    private final TappRepository tappRepository;
 
     @Override
     public GenerateShortUrlResponse execute(GenerateShortUrlRequest input) throws AVRBusinessValidationException {
+        if(ObjectUtils.isEmpty(input.getKey())){
+            throw new AVRBusinessValidationException(
+                    AVRHttpStatus.UNAUTHORIZED.getCode(),
+                    HttpStatus.UNAUTHORIZED.getReasonPhrase(),
+                    HttpStatus.UNAUTHORIZED,
+                    new ArrayList<>()
+            );
+        }
+
+        var keyData = tappRepository.findPropertyValue(input.getKey()).orElseThrow(() -> new AVRBusinessValidationException(
+                AVRHttpStatus.UNAUTHORIZED.getCode(),
+                HttpStatus.UNAUTHORIZED.getReasonPhrase(),
+                HttpStatus.UNAUTHORIZED,
+                new ArrayList<>()
+        ));
+
+
         var existingLongUrl = urlShortenerRepository.findExistingLongUrl(input.getLongUrl());
 
         if(existingLongUrl.isPresent()){
@@ -68,6 +87,7 @@ public class GenerateShortUrlService implements
                         .longUrl(input.getLongUrl())
                         .shortUrl(shortCode)
                         .createdAt(LocalDateTime.now())
+                        .createdBy(keyData.getPartnerCode())
                         .updatedAt(LocalDateTime.now())
                 .build());
 

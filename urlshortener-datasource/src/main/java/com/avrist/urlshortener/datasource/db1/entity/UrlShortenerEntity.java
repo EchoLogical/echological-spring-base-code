@@ -31,4 +31,6 @@ public class UrlShortenerEntity implements Serializable {
     private LocalDateTime createdAt;
     @Column(name = "UpdatedAt")
     private LocalDateTime updatedAt;
+    @Column(name = "CreatedBy")
+    private String createdBy;
 }

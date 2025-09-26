@@ -20,4 +20,5 @@ public class GenerateShortUrlRequest {
     @Min(message = "codeLength in 2", value = 2)
     private Integer codeLength;
     private Integer codeLoop;
+    private String key;
 }

@@ -10,9 +10,9 @@ server:
 db:
   urlshortener:
     hikari:
-      url: jdbc:h2:file:../data/urlshortener
+      url: jdbc:sqlserver://SVRDW16DTM01:1433;databaseName=AVRBIZ
       username: sa
-      password:
+      password: P@ssw0rd
       max-pool-size: 10
       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     hibernate:
@@ -23,9 +23,9 @@ db:
 service:
   urlshortener:
     generateshorturl:
-      defaultloop: 500
+      defaultloop: 300
       redirect:
-        scheme: https
-        host: adev.avrist.com/st
+        scheme: http
+        host: localhost:9000/st
 logging:
   config: classpath:logback-dev.xml
