@@ -23,7 +23,7 @@ public class GenerateShortUrlController {
 
     @PostMapping("")
     public ResponseEntity<BaseResponse<GenerateShortUrlResponse>> generate(
-            @RequestHeader("key") String key,
+            @RequestHeader(value = "key", required = false) String key,
             @RequestBody @Valid GenerateShortUrlRequest body
     ) throws AVRBusinessValidationException {
         body.setKey(key);
