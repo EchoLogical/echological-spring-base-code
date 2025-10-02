@@ -18,7 +18,7 @@ import javax.validation.Valid;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/biz/api/v1/msgconv-urlshortener/generate")
+@RequestMapping("generate")
 @Tag(name = "msgconv-urlshortener", description = "msgconv-urlshortener")
 public class GenerateShortUrlController {
 

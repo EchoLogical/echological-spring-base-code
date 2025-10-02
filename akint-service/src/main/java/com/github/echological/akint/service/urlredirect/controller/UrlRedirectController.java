@@ -15,7 +15,7 @@ import java.util.Map;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/st")
+@RequestMapping("st")
 @Tag(name = "msgconv-urlshortener", description = "msgconv-urlshortener")
 public class UrlRedirectController {
 
