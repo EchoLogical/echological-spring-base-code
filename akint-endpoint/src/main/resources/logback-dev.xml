@@ -2,7 +2,7 @@
 <configuration>
 
     <property name="app_name" value="urlshortener" />
-    <property name="log_base_path" value="./logs" />
+    <property name="log_base_path" value="A:/tmp/logs" />
     <property name="log_path" value="${log_base_path}/${app_name}" />
     <property name="log_path_error" value="${log_path}/errors" />
     <property name="log_path_audit" value="${log_path}/audit" />
