@@ -8,16 +8,16 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan({
-		"com.avrist.urlshortener"
+		"com.github.echological.akint"
 })
-public class UrlshortenerEndpointApplication extends SpringBootServletInitializer {
+public class AkintEndpointApplication extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(UrlshortenerEndpointApplication.class);
+		return builder.sources(AkintEndpointApplication.class);
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(UrlshortenerEndpointApplication.class, args);
+		SpringApplication.run(AkintEndpointApplication.class, args);
 	}
 }
