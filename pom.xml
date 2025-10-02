@@ -11,17 +11,17 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.avrist.urlshortener</groupId>
-    <artifactId>avrist-url-shortener</artifactId>
+    <groupId>com.github.echological.akint</groupId>
+    <artifactId>akar-inti-test</artifactId>
     <version>1.0</version>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>urlshortener-global</module>
-        <module>urlshortener-datasource</module>
-        <module>urlshortener-service</module>
-        <module>urlshortener-endpoint</module>
+        <module>akint-global</module>
+        <module>akint-datasource</module>
+        <module>akint-service</module>
+        <module>akint-endpoint</module>
     </modules>
 
     <properties>
