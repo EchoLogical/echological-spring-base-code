@@ -11,17 +11,17 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.github.echological.akint</groupId>
+    <groupId>com.github.echological.app</groupId>
     <artifactId>akar-inti-test</artifactId>
     <version>1.0</version>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>akint-global</module>
-        <module>akint-datasource</module>
-        <module>akint-service</module>
-        <module>akint-endpoint</module>
+        <module>app-global</module>
+        <module>app-datasource</module>
+        <module>app-service</module>
+        <module>app-endpoint</module>
     </modules>
 
     <properties>
