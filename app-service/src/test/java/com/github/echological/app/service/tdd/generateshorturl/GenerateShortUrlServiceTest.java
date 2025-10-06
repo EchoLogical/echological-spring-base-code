@@ -1,4 +1,4 @@
-package com.github.echological.akint.service.tdd.generateshorturl;
+package com.github.echological.app.service.tdd.generateshorturl;
 
 import com.github.echological.akint.datasource.entity.UrlShortenerEntity;
 import com.github.echological.akint.datasource.repository.UrlShortenerRepository;

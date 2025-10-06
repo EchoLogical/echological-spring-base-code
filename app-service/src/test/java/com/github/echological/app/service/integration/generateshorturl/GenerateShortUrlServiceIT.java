@@ -1,4 +1,4 @@
-package com.github.echological.akint.service.integration.generateshorturl;
+package com.github.echological.app.service.integration.generateshorturl;
 
 import com.github.echological.akint.datasource.repository.UrlShortenerRepository;
 import com.github.echological.akint.service.TestJpaConfig;

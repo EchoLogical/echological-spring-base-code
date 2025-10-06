@@ -1,4 +1,4 @@
-package com.github.echological.akint.service;
+package com.github.echological.app.service;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;

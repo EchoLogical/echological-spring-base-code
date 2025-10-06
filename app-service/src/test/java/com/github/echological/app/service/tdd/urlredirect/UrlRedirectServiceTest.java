@@ -1,4 +1,4 @@
-package com.github.echological.akint.service.tdd.urlredirect;
+package com.github.echological.app.service.tdd.urlredirect;
 
 import com.github.echological.akint.global.constant.AVRHttpStatus;
 import com.github.echological.akint.global.exception.AVRContentBusinessValidationException;

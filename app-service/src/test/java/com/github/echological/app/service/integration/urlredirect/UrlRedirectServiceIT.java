@@ -1,4 +1,4 @@
-package com.github.echological.akint.service.integration.urlredirect;
+package com.github.echological.app.service.integration.urlredirect;
 
 import com.github.echological.akint.datasource.entity.UrlShortenerEntity;
 import com.github.echological.akint.datasource.repository.UrlShortenerRepository;
