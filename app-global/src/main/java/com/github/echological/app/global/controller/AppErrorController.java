@@ -1,7 +1,7 @@
 package com.github.echological.app.global.controller;
 
-import com.github.echological.akint.global.constant.AVRHttpStatus;
-import com.github.echological.akint.global.model.BaseResponse;
+import com.github.echological.app.global.constant.AVRHttpStatus;
+import com.github.echological.app.global.model.BaseResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.servlet.error.ErrorController;

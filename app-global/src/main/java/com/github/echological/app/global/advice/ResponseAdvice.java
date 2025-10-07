@@ -1,8 +1,8 @@
 package com.github.echological.app.global.advice;
 
 
-import com.github.echological.akint.global.model.BaseResponse;
-import com.github.echological.akint.global.model.PaginatedBaseResponse;
+import com.github.echological.app.global.model.BaseResponse;
+import com.github.echological.app.global.model.PaginatedBaseResponse;
 import org.apache.commons.lang3.ObjectUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

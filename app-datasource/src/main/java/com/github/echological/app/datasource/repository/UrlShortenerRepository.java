@@ -1,6 +1,6 @@
 package com.github.echological.app.datasource.repository;
 
-import com.github.echological.akint.datasource.entity.UrlShortenerEntity;
+import com.github.echological.app.datasource.entity.UrlShortenerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

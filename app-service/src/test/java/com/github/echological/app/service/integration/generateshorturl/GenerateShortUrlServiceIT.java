@@ -1,10 +1,10 @@
 package com.github.echological.app.service.integration.generateshorturl;
 
-import com.github.echological.akint.datasource.repository.UrlShortenerRepository;
-import com.github.echological.akint.service.TestJpaConfig;
-import com.github.echological.akint.service.generateshorturl.GenerateShortUrlService;
-import com.github.echological.akint.service.generateshorturl.model.request.GenerateShortUrlRequest;
-import com.github.echological.akint.service.generateshorturl.model.response.GenerateShortUrlResponse;
+import com.github.echological.app.datasource.repository.UrlShortenerRepository;
+import com.github.echological.app.service.TestJpaConfig;
+import com.github.echological.app.service.generateshorturl.GenerateShortUrlService;
+import com.github.echological.app.service.generateshorturl.model.request.GenerateShortUrlRequest;
+import com.github.echological.app.service.generateshorturl.model.response.GenerateShortUrlResponse;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

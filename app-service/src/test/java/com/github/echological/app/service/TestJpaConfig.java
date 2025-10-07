@@ -7,10 +7,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @EnableAutoConfiguration
-@EntityScan(basePackages = "com.github.echological.akint.datasource.entity")
-@EnableJpaRepositories(basePackages = "com.github.echological.akint.datasource.repository")
+@EntityScan(basePackages = "com.github.echological.app.datasource.entity")
+@EnableJpaRepositories(basePackages = "com.github.echological.app.datasource.repository")
 @org.springframework.context.annotation.ComponentScan(basePackages = {
-        "com.github.echological.akint.service"
+        "com.github.echological.app.service"
 })
 public class TestJpaConfig {
 }

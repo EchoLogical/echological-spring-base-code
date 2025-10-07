@@ -1,10 +1,11 @@
 package com.github.echological.app.service.tdd.urlredirect;
 
-import com.github.echological.akint.global.constant.AVRHttpStatus;
-import com.github.echological.akint.global.exception.AVRContentBusinessValidationException;
-import com.github.echological.akint.datasource.entity.UrlShortenerEntity;
-import com.github.echological.akint.datasource.repository.UrlShortenerRepository;
-import com.github.echological.akint.service.urlredirect.model.request.UrlRedirectRequest;
+import com.github.echological.app.global.constant.AVRHttpStatus;
+import com.github.echological.app.global.exception.AVRContentBusinessValidationException;
+import com.github.echological.app.datasource.entity.UrlShortenerEntity;
+import com.github.echological.app.datasource.repository.UrlShortenerRepository;
+import com.github.echological.app.service.urlredirect.UrlRedirectService;
+import com.github.echological.app.service.urlredirect.model.request.UrlRedirectRequest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

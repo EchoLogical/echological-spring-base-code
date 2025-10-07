@@ -1,11 +1,12 @@
 package com.github.echological.app.service.tdd.generateshorturl;
 
-import com.github.echological.akint.datasource.entity.UrlShortenerEntity;
-import com.github.echological.akint.datasource.repository.UrlShortenerRepository;
-import com.github.echological.akint.global.constant.AVRHttpStatus;
-import com.github.echological.akint.global.exception.AVRBusinessValidationException;
-import com.github.echological.akint.service.generateshorturl.config.GenerateShortUrlConfig;
-import com.github.echological.akint.service.generateshorturl.model.request.GenerateShortUrlRequest;
+import com.github.echological.app.datasource.entity.UrlShortenerEntity;
+import com.github.echological.app.datasource.repository.UrlShortenerRepository;
+import com.github.echological.app.global.constant.AVRHttpStatus;
+import com.github.echological.app.global.exception.AVRBusinessValidationException;
+import com.github.echological.app.service.generateshorturl.GenerateShortUrlService;
+import com.github.echological.app.service.generateshorturl.config.GenerateShortUrlConfig;
+import com.github.echological.app.service.generateshorturl.model.request.GenerateShortUrlRequest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

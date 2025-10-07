@@ -1,14 +1,14 @@
 package com.github.echological.app.service.generateshorturl;
 
-import com.github.echological.akint.datasource.entity.UrlShortenerEntity;
-import com.github.echological.akint.datasource.repository.UrlShortenerRepository;
-import com.github.echological.akint.global.constant.AVRHttpStatus;
-import com.github.echological.akint.global.exception.AVRBusinessValidationException;
-import com.github.echological.akint.service.UrlShortenerService;
-import com.github.echological.akint.service.generateshorturl.config.GenerateShortUrlConfig;
-import com.github.echological.akint.service.generateshorturl.model.request.GenerateShortUrlRequest;
-import com.github.echological.akint.service.generateshorturl.model.response.GenerateShortUrlResponse;
-import com.github.echological.akint.service.generateshorturl.util.GenerateShortUrlUtil;
+import com.github.echological.app.datasource.entity.UrlShortenerEntity;
+import com.github.echological.app.datasource.repository.UrlShortenerRepository;
+import com.github.echological.app.global.constant.AVRHttpStatus;
+import com.github.echological.app.global.exception.AVRBusinessValidationException;
+import com.github.echological.app.service.UrlShortenerService;
+import com.github.echological.app.service.generateshorturl.config.GenerateShortUrlConfig;
+import com.github.echological.app.service.generateshorturl.model.request.GenerateShortUrlRequest;
+import com.github.echological.app.service.generateshorturl.model.response.GenerateShortUrlResponse;
+import com.github.echological.app.service.generateshorturl.util.GenerateShortUrlUtil;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.http.HttpStatus;
@@ -55,7 +55,7 @@ public class GenerateShortUrlService implements
 
         if(existingShortUrl.isPresent()){
             throw new AVRBusinessValidationException(
-                    AVRHttpStatus.FAILED.getCode(),
+                    AVRHttpStatus.ERROR.getCode(),
                     "Failed to generate url.",
                     HttpStatus.BAD_REQUEST,
                     new ArrayList<>()

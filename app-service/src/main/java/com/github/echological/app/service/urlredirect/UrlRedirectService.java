@@ -1,12 +1,12 @@
 package com.github.echological.app.service.urlredirect;
 
-import com.github.echological.akint.datasource.repository.UrlShortenerRepository;
-import com.github.echological.akint.global.constant.AVRHttpStatus;
-import com.github.echological.akint.global.exception.AVRBusinessValidationException;
-import com.github.echological.akint.global.exception.AVRContentBusinessValidationException;
-import com.github.echological.akint.service.UrlShortenerService;
-import com.github.echological.akint.service.urlredirect.model.request.UrlRedirectRequest;
-import com.github.echological.akint.service.urlredirect.model.response.UrlRedirectResponse;
+import com.github.echological.app.datasource.repository.UrlShortenerRepository;
+import com.github.echological.app.global.constant.AVRHttpStatus;
+import com.github.echological.app.global.exception.AVRBusinessValidationException;
+import com.github.echological.app.global.exception.AVRContentBusinessValidationException;
+import com.github.echological.app.service.UrlShortenerService;
+import com.github.echological.app.service.urlredirect.model.request.UrlRedirectRequest;
+import com.github.echological.app.service.urlredirect.model.response.UrlRedirectResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

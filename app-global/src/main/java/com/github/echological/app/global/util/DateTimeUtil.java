@@ -13,7 +13,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 
-import static com.github.echological.akint.global.constant.FormatConstant.STD_DATE_FORMAT;
+import static com.github.echological.app.global.constant.FormatConstant.STD_DATE_FORMAT;
 
 @UtilityClass
 public class DateTimeUtil {

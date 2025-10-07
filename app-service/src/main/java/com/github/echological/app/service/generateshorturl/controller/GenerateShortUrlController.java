@@ -1,11 +1,11 @@
 package com.github.echological.app.service.generateshorturl.controller;
 
-import com.github.echological.akint.global.constant.AVRHttpStatus;
-import com.github.echological.akint.global.exception.AVRBusinessValidationException;
-import com.github.echological.akint.global.model.BaseResponse;
-import com.github.echological.akint.service.generateshorturl.GenerateShortUrlService;
-import com.github.echological.akint.service.generateshorturl.model.request.GenerateShortUrlRequest;
-import com.github.echological.akint.service.generateshorturl.model.response.GenerateShortUrlResponse;
+import com.github.echological.app.global.constant.AVRHttpStatus;
+import com.github.echological.app.global.exception.AVRBusinessValidationException;
+import com.github.echological.app.global.model.BaseResponse;
+import com.github.echological.app.service.generateshorturl.GenerateShortUrlService;
+import com.github.echological.app.service.generateshorturl.model.request.GenerateShortUrlRequest;
+import com.github.echological.app.service.generateshorturl.model.response.GenerateShortUrlResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;

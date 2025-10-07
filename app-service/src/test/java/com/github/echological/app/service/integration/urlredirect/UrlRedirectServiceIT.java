@@ -1,10 +1,10 @@
 package com.github.echological.app.service.integration.urlredirect;
 
-import com.github.echological.akint.datasource.entity.UrlShortenerEntity;
-import com.github.echological.akint.datasource.repository.UrlShortenerRepository;
-import com.github.echological.akint.service.TestJpaConfig;
-import com.github.echological.akint.service.urlredirect.UrlRedirectService;
-import com.github.echological.akint.service.urlredirect.model.request.UrlRedirectRequest;
+import com.github.echological.app.datasource.entity.UrlShortenerEntity;
+import com.github.echological.app.datasource.repository.UrlShortenerRepository;
+import com.github.echological.app.service.TestJpaConfig;
+import com.github.echological.app.service.urlredirect.UrlRedirectService;
+import com.github.echological.app.service.urlredirect.model.request.UrlRedirectRequest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

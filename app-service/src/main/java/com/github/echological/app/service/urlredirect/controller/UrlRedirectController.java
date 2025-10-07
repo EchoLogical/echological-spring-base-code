@@ -1,8 +1,8 @@
 package com.github.echological.app.service.urlredirect.controller;
 
-import com.github.echological.akint.global.exception.AVRBusinessValidationException;
-import com.github.echological.akint.service.urlredirect.UrlRedirectService;
-import com.github.echological.akint.service.urlredirect.model.request.UrlRedirectRequest;
+import com.github.echological.app.global.exception.AVRBusinessValidationException;
+import com.github.echological.app.service.urlredirect.UrlRedirectService;
+import com.github.echological.app.service.urlredirect.model.request.UrlRedirectRequest;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

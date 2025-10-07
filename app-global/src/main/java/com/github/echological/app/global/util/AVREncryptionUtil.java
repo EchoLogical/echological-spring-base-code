@@ -1,7 +1,7 @@
 package com.github.echological.app.global.util;
 
-import com.github.echological.akint.global.constant.AVRHttpStatus;
-import com.github.echological.akint.global.exception.AVRBusinessValidationException;
+import com.github.echological.app.global.constant.AVRHttpStatus;
+import com.github.echological.app.global.exception.AVRBusinessValidationException;
 import lombok.experimental.UtilityClass;
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.slf4j.Logger;
