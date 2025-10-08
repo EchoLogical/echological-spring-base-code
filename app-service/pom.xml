@@ -49,22 +49,19 @@
             <version>7.14.0</version>
             <scope>test</scope>
         </dependency>
-        <!-- Removed cucumber-spring to avoid requiring Spring context in BDD tests -->
-        <!-- JUnit Platform Suite for @Suite, @IncludeEngines, etc. -->
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-suite-api</artifactId>
             <version>1.10.2</version>
             <scope>test</scope>
         </dependency>
-        <!-- Intentionally omit junit-platform-suite-engine to avoid version conflicts with the launcher provided by the test runner -->
-    <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-inline</artifactId>
-        <version>4.11.0</version>
-        <scope>test</scope>
-    </dependency>
-</dependencies>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-inline</artifactId>
+            <version>4.11.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

@@ -24,7 +24,7 @@ public class UrlRedirectService
     @Override
     public UrlRedirectResponse execute(UrlRedirectRequest input) throws AVRBusinessValidationException {
         var fullLink = urlShortenerRepository.findExistingCode(input.getCode()).orElseThrow(() -> new AVRContentBusinessValidationException(
-                AVRHttpStatus.INVALID_ARGUMENT.getCode(),
+                AVRHttpStatus.DATA_NOT_FOUND.getCode(),
                 "Invalid url",
                 HttpStatus.BAD_REQUEST,
                 new ArrayList<>()

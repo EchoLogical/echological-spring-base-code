@@ -56,6 +56,9 @@ public class GenerateShortUrlSteps {
     public void repository_has_no_existing_data_for_that_long_url() {
         Mockito.when(ctx.repository.findExistingLongUrl(eq(ctx.longUrl)))
                 .thenReturn(Optional.empty());
+        // For generation path, assume any generated code is not used unless explicitly stubbed
+        Mockito.when(ctx.repository.findExistingCode(any()))
+                .thenReturn(Optional.empty());
     }
 
     @And("next generated random codes are {string}")
