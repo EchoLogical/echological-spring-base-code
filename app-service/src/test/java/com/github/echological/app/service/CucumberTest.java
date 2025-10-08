@@ -1,4 +1,4 @@
-package com.github.echological.app.service.bdd;
+package com.github.echological.app.service;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
